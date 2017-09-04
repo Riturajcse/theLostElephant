@@ -22,20 +22,20 @@
     img.src = 'car.png';
     context.drawImage(img, car.x, car.y);
   }
-  function drawLostElephant(car, context) {
+  function drawLostElephant(lostElephant, context) {
     var img = new Image();
     img.src = 'lost_elephant.png';
-    context.drawImage(img, car.x, car.y);
+    context.drawImage(img, lostElephant.x, lostElephant.y);
   }
-  function drawFriendElephant(car, context) {
+  function drawFriendElephant(friendElephant, context) {
     var img = new Image();
     img.src = 'lost_elephant.png';
-    context.drawImage(img, car.x, car.y);
-    context.drawImage(img, car.x+150, car.y);
+    context.drawImage(img, friendElephant.x, friendElephant.y);
+    context.drawImage(img, friendElephant.x + 150, friendElephant . y);
   }
-  function drawRoad(car, context) {
+  function drawRoad(road, context) {
     context.beginPath();
-    context.rect(car.x, car.y+10, car.width, car.height+20);
+    context.rect(road.x, road.y+10, road.width, road.height+20);
     context.fillStyle = '#A68B44';
     context.fill();
     context.lineWidth = car.borderWidth;
